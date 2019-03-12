@@ -1,12 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <title>B.O.I.S.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./logo.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    html, body {
+        height: 100%;
+    }
+
+    body {
+        min-width: 450px;
+        display: grid;
+        grid-template-rows: 90px 1fr 50px;
+    }
+
+    header {
+        background-color: #fff;
+        height: 90px;
+        border-bottom: 2px solid #000;
+        grid-row: 1 / 2;
+    }
+
+    header p {
+        float: left;
+        font-size: 1.8em;
+    }
+
+    header nav a {
+        text-decoration: none;
+        color: black;
+        float: right;
+        background-color: #ddd;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 25px 50px;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo {
+        float: left;
+        vertical-align: top;
+        height: 100%;
+        margin-right: 20px;
+    }
+
+    header nav a:hover {
+        cursor: pointer;
+        background: linear-gradient(to left, #cc2b5e, #753a88);
+        color: aliceblue;
+    }
+
+    main {
+        grid-row: 2 / 3;
+        background: linear-gradient(to right, #355C7D, #6C5B7B, #C06C84);
+        justify-content: center;
+    }
+
+    main section {
+        width: 80%;
+        background-color: #fff;
+        margin: 50px auto;
+        background-color: #222;
+        color: aliceblue;
+        border-radius: 50px;
+        padding: 50px;
+    }
+
+    footer {
+        grid-row: 3 / 4;
+        background-color: #ddd;
+        padding: 0px 20px;
+    }
+
+    .ref {
+        float: right;
+    }
+
+    .video {
+        width: 100%;
+    }
+
+    p {
+        text-indent: 30px;
+        line-height: 2.5em;
+    }
+
+    p a{
+        color: chartreuse;
+    }
+
+    .video-externo {
+        display: block;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+</style>
 <body>
-    <a href="bois-editor.html">Editor</a>
+    <header>
+        <img class="logo" src="./logo.png" alt="">
+        <p>B.O.I.S</p>
+        <nav>
+            <a href="./bois-editor.html">Editor Bootstrap</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Bootstrap</h1>
+            <iframe class="video" src="https://drive.google.com/file/d/1SHZow3tS7XOMMdqBd7qNpfkgsf5aBAEw/preview" width="640" height="480"></iframe>
+            <p>
+                Bootstrap é um framework web com código-fonte aberto para desenvolvimento de componentes de interface e front-end para sites e aplicações web usando HTML, CSS e JavaScript, baseado em modelos de design para a tipografia, melhorando a experiência do usuário em um site amigável e responsivo.
+                O Bootstrap é um dos projetos mais bem avaliado no site GitHub, com mais de 111.600 estrelas e 51.500 forks. Possui ampla documentação no <a href="https://getbootstrap.com/">site oficial</a>, assim como diversos tutoriais e materiais em português.
+            </p>
+            <p>
+                Este vídeo tem como objetivo, explicar como utilizar este framework para começar a criar sites com interface mais amigável para o usuário. Além disso, demonstra a utilização do B.O.I.S., o editor de código HTML, CSS e JavaScript criado pelo grupo para treinamento das suas habilidades em desenvolvimento web.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <small>FTT - Faculdade de Tecnologia Termomecânica - EC7 - Alunos: 0034 / 0040 / 0041 / 0048 / 0049</small>
+        <small class="ref"><a href=https://pt.pngtree.com>Gráficos de pngtree.com</a></small>
+    </footer>
+
 </body>
 </html>
