@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+header {
+    height: 60px;
+    background: linear-gradient(to right,  #292E49, #536976, #BBD2C5);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    text-decoration: none;
+    float: left;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    margin: 15px 15px 0 15px;
+}
+
+#btn-run {
+    margin: 10px;
+    padding: 10px 20px;
+    color: aliceblue;
+    background: linear-gradient(to right, #cc2b5e, #753a88);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 2px black;
+    font-weight: 900;
+}
+
+#btn-run:hover {
+    cursor: pointer;
+    background: linear-gradient(to left, #cc2b5e, #753a88);
+}
+
+main {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
+    height: calc(100% - 80px);
+    width: 100%;
+}
+
+#editor, #result {
+    margin: 10px 0 0 10px;
+    height: calc(100% - 20px);
+    width: calc(100% - 20px);
+    border-radius: 10px;
+    max-width: 47.5vw;
+    max-height: 85vh;
+}
+
+#result{
+    grid-column: 2 / 3;
+    background-color: #fff;
+}
+
+#editor {
+    grid-column: 1 / 2;
+    background-color: #1E1F20;
+    color: rgb(211, 211, 211);   
+    font-size: 12px;   
+    padding: 5px;   
+}
+
+footer p {
+    height: 20px;
+    margin: 0;
+    padding-left: 15px;
+    color: aliceblue;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+@media (max-width: 770px) {
+    main { grid-template-columns: 1fr; }
+    #result, #editor { 
+        grid-column: 1 / 2; 
+        max-width: 95vw;
+        height: 42.5vh;
+    }
+}
